@@ -3,29 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Author Site</title>
+  <meta name="description" content="作品、断片、記録を残すための小さな場所。">
+  <title>作品・断片・記録</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>作品</h1>
+  <main class="site">
+    <header class="site-header">
+      <p class="site-label">作品・断片・記録</p>
+    </header>
 
-    <article>
-      <h2>名前のない灯台</h2>
-      <p>公開: 2026-09-28</p>
-      <p>
-        <a href="content/works/namae-no-nai-toudai.html">
-          読む
-        </a>
-      </p>
-    </article>
+    <section class="section" aria-labelledby="works">
+      <h1 class="section-title" id="works">作品</h1>
+      <article class="entry">
+        <h2 class="entry-title">名前のない灯台</h2>
+        <p class="meta">公開 2026-09-28</p>
+        <a class="entry-link" href="content/works/namae-no-nai-toudai.html">読む</a>
+      </article>
+    </section>
 
-    <hr>
+    <section class="section" aria-labelledby="fragments">
+      <h2 class="section-title" id="fragments">断片</h2>
+      <p class="empty">まだありません。</p>
+    </section>
 
-    <h1>断片</h1>
-    <p>まだありません。</p>
+    <section class="section" aria-labelledby="notes">
+      <h2 class="section-title" id="notes">記録</h2>
+      <p class="empty">まだありません。</p>
+    </section>
 
-    <h1>記録</h1>
-    <p>まだありません。</p>
+    <footer class="site-footer">
+      <p>この場所の文章はAIによって生成されています。</p>
+    </footer>
   </main>
 </body>
 </html>
