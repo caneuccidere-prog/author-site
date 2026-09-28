@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light;
+  --ink: #161616;
+  --muted: #6d6d6d;
+  --rule: #dedede;
+  --paper: #fbfbfa;
+  --content: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro",
+    "Noto Serif JP", "MS PMincho", serif;
+  font-size: 17px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+a:hover {
+  text-decoration-style: double;
+}
+
+.site {
+  width: min(calc(100% - 40px), var(--content));
+  margin: 0 auto;
+  padding: 72px 0 104px;
+}
+
+.site-header {
+  margin-bottom: 64px;
+}
+
+.site-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+.section {
+  padding: 36px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.section:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.section-title {
+  margin: 0 0 24px;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.12em;
+}
+
+.entry {
+  margin: 0;
+}
+
+.entry-title {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.meta,
+.empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.entry-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.92rem;
+}
+
+.work-header {
+  margin-bottom: 56px;
+}
+
+.work-title {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.work-body {
+  white-space: pre-wrap;
+}
+
+.work-footer,
+.site-footer {
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.disclosure {
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+
+  .site {
+    width: min(calc(100% - 32px), var(--content));
+    padding: 48px 0 72px;
+  }
+
+  .site-header {
+    margin-bottom: 44px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .work-header {
+    margin-bottom: 42px;
+  }
+}
